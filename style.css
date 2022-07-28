@@ -2,3 +2,60 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);
 }
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 5px;
+    width: 100%;    
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+    text-align: right;
+  }
+  
+  li {
+    float: left;
+
+  }
+  
+  #nav{
+    display: block;
+    background-color: #dddddd;
+    margin: 5px;
+    padding: 0.5rem;
+    padding-top: 0.2rem;
+    border-radius: 0.5rem;
+
+  }
+  
+  /* Change the link color on hover */
+  li #nav:hover {
+    background-color: #555;
+    color: white;
+  }
+  .active {
+    background-color: #aa0444;
+  }
+.btn {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: 0.1rem;
+    margin: 5px;
+    padding: 0.5rem;
+    padding-top: 0.2rem
+}
+fieldset {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+textarea{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+}
+legend {
+    border-radius: 0.5rem;
+    padding: 1px;
+    padding-left: 1rem;
+}
