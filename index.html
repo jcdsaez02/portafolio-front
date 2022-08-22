@@ -1,77 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Juliana Saez, jcdsaez@.com">
-        <meta name="coverage" content="Worldwide">
-        <meta name="distribution" content="Global">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="your, tags" />
-        <meta name="language" content="ES">
-        <title>Mi Portafolio :)</title>
-        <link rel="icon" type="image/x-icon" href="src/argprog.jpg">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        <title>How To Create Bootstrap 5 Navbar With Login Button</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+        <title>Portafolio Web</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
     </head>
-    <body text="white" style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);background: rgb(118,19,135);
-      background: radial-gradient(circle, rgba(118,19,135,1) 51%, rgba(70,71,252,1) 100%);background: rgb(2,0,36);
-      background: linear-gradient(121deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);
-      background: rgb(2,0,36);
-      background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);">
-        <!-- contenido-->
-        <img src="src/teenager-boy-bedroom-interior-computers-desk/2738.jpg" id="banner" alt="">
-        <div class="container-fluid">
-          <!-- barra de navegacion -->
-          
-          <div class="navbar">
-            <ul>
-              <li><a href="default.asp"><image style="height: 3rem;width: 14rem; margin-left: 0.2rem ;" src="src/arg.png"></a></li>
-              <li><a id="nav" href="default.asp"><button  type="button" style="font-weight: bold;border:1px" class="btn btn-outline-light" href="about.asp">Programa #YoProgramo</button></a></li>
-              <li><a id="nav" href="news.asp"><button  type="button" style="font-weight: bold; border:1px" class="btn btn-outline-light" href="about.asp">About Me</button></a></li>
-              <li><a id="nav" href="contact.asp"><button  type="button" style="font-weight: bold; border:1px" class="btn btn-outline-light" href="about.asp">Career & Education</button></a></li>
-              <li><a id="nav" href="about.asp"><button  type="button" style="font-weight: bold; border:1px" class="btn btn-outline-light" href="about.asp">Skills</button></a></li>
-              <div style="margin-top: 0.3rem;">
-                <button  type="button" class="btn btn-outline-light"  style="font-weight: bold; border:1px;font-weight: bold;" href="about.asp">Sign Up</button>
-                <button  type="button" class="btn btn-success"  href="about.asp">Log in</button>
+    <body style="background: rgb(34,193,195);
+    background: linear-gradient(176deg, rgba(34,193,195,1) 0%, rgba(166,45,253,1) 100%);overflow: hidden; height: 100vh;">
+        <header>
+
+          <div id="barra-navegacion">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);background: rgb(118,19,135);
+            background: radial-gradient(circle, rgba(118,19,135,1) 51%, rgba(70,71,252,1) 100%);background: rgb(2,0,36);
+            background: linear-gradient(121deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);
+            background: rgb(2,0,36);
+            background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 16%, rgba(107,7,105,1) 58%, rgba(201,0,160,1) 87%);
+            ">
+              <div class="container">
+                  <a class="navbar-brand" href="#"><img src="/images/MarkupTag-white-logo.png" alt="Logo" class="img-fluid" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav mx-auto">
+                          <li class="nav-item">
+                              <a class="nav-link active" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">About Us</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  View More
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                  <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                                  <li><a class="dropdown-item" href="#">Android Development</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Contact Us</a>
+                          </li>
+                      </ul>
+                      <div class="d-flex">
+                          <div class="dropdown">
+                              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Our Products
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">Product One</a></li>
+                                  <li><a class="dropdown-item" href="#">Product Two</a></li>
+                                  <li><a class="dropdown-item" href="#">Product Three</a></li>
+                              </ul>
+                          </div>
+                          <button class="btn btn-light ms-3">Login</button>
+                      </div>
+                  </div>
               </div>
-              
-            </ul>
+            </nav> 
           </div>
 
-          <!-- campo para escribir -->
-          <fieldset style="background-color:lightblue;">
-            <legend style="background-color: navy;color: rgb(161, 187, 196);">Este es mi box</legend>
-            <textarea style='background-color: pink;'>inserte su texto aki</textarea>
-          </fieldset>
-          
-          <!-- Caja About me -->
-          <div class="card mat-card">
-            <div class="card-titles">
-              <h2> Acerca de</h2>
-              <div class="btn-edit" onclick="editar_parrafo()">
-                <a href="#" class="btn-right">
-                    <i class="fa fa-open"></i>
-                </a>
+          <div id="portada-perfil">
+            <section class="perfil-usuario">
+              <div class="contenedor-perfil">
+                  <div class="portada-perfil" style="background-image: url('http://localhost/multimedia/relleno/fondo-9.png');">
+                      <div class="sombra"></div>
+                      <div class="avatar-perfil">
+                          <img src="src/foto-para-perfil.jpeg" alt="img">
+                          <a href="#" class="cambiar-foto">
+                              <i class="fas fa-camera"></i> 
+                              <span>Cambiar foto</span>
+                          </a>
+                      </div>
+                      <div class="datos-perfil">
+                          <h4 class="titulo-usuario">Nombre de usuario</h4>
+                          <p class="bio-usuario">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                          <ul class="lista-perfil">
+                              <li>35 Seguidores</li>
+                              <li>7 Seguidos</li>
+                              <li>32 Publicaciones</li>
+                          </ul>
+                      </div>
+                      <div class="opcciones-perfil">
+                          <button type="">Cambiar portada</button>
+                          <button type=""><i class="fas fa-wrench"></i></button>
+                      </div>
+                  </div>
+                  <div class="menu-perfil">
+                      <ul>
+                          <li><a href="#" title=""><i class="icono-perfil fas fa-bullhorn"></i> Publicaciones</a></li>
+                          <li><a href="#" title=""><i class="icono-perfil fas fa-info-circle"></i> Informacion</a></li>
+                          <li><a href="#" title=""><i class="icono-perfil fas fa-grin"></i> Amigos 43</a></li>
+                          <li><a href="#" title=""><i class="icono-perfil fas fa-camera"></i> Fotos</a></li>
+                      </ul>
+                  </div>
               </div>
+            </section>
+          </div>  
+
+          <div id="bio">
+
+          </div>
+
+          <div id="tecnologias">
+
+          </div>
+          
+          <div id="educacion">
+
+          </div>
+
+          <div id="proyectos">
+            <div id="en-proceso">
+
+            </div>
+            <div id="concluidos">
+              
             </div>
           </div>
-        </div>
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+          <div id="referencias">
+            <div id="comentarios">
+              <!-- Deberia permitir filtrados, por compañeros, jefes, fecha, y como requisito que este registrado -->
+            </div>
+          </div>
+
+
+          <div id="contacto">
+            <div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
+              <small style="font-size: .75rem;">Este portafolio nació como proyecto final del programa</small>
+              <small style="font-size: .75rem;"> <br>Argentina Programa, Periodo 2022-2023</small>
+              <div>
+                  <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-google"></i></a> 
+                  <a target="_blank" href="https://www.instagram.com/jcdsaez/"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/juliana-saez/"><i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://github.com/jcdsaez02"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+          </div>
+
+
+          
+        </header>
+
+        <!-- Bootstrap JS -->
+        <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
     </body>
-    <footer>
-        <!-- datos extras, fijo al final de la pagina-->
-        <div class="navbar" >
-          <ul>
-            <li><a id="nav" href="default.asp">Facebook</a></li>
-            <li><a id="nav" href="news.asp">Tiwtter</a></li>
-            <li><a id="nav" href="contact.asp">Linkedin</a></li>
-            <li><a id="nav" href="about.asp">Github</a></li>
-            <button  type="button" class="btn btn-success" href="about.asp">Log in</button>
-          </ul>
-        </div>
-    </footer>
 </html>
